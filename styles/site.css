@@ -1,0 +1,52 @@
+h2{
+	font-family:Calibri;
+	text-align:center;
+	font-weight:bold;
+	color:white;
+	
+}
+#output{
+	clear:both;		
+}
+#checkoutdiv{
+	display:none;
+}
+.img-fluid{
+	height:100px;
+	width:200px;
+}
+body{
+	background-color:#BEBEBE;
+}
+.card-text{
+	font-family:Calibri;
+	font-size:15px;
+}
+input[type="number"]{
+	width:20px;
+}
+p{
+	font-family:Calibri;
+	font-size:30px;
+	text-align:justify;
+	color:white;
+}
+.image {
+  width:1200px;
+  height:200px;
+}
+.text{
+	font-family:Calibri;
+	text-align:justify;
+	font-weight:bold;
+	color:white;
+	font-size:20px;
+	
+}
+.smalltext{
+	font-family:Calibri;
+	text-align:justify;
+	font-weight:bold;
+	color:white;
+	font-size:15px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name ="viewport"content="width=device-width,initial-scale =1">
+		<meta http-equiv="x-ua-compatible"content="ie=edge">
+		<title>Checkout Items</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+		<link rel="styles/site styles.css"/>
+	</head>
+	<body>
+			<div class="container">
+			<h1>Your items to checkout</h1>
+			<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+			<input type="hidden" name="cmd" value="_cart">
+			<input type="hidden" name="upload" value="1">
+			<input type="hidden" name="business" value="seller@dezignerfotos.com">
+		
+			
+			<table class="table table-hover">
+					<thead class="thead-inverse">
+						<th>Cancel item</th>
+						<th>Quantity</th>
+						<th>Item Name</th>
+						<th>Price</th>
+						<th>Subtotal</th>
+					</thead>
+				<tbody id="output">						
+				</tbody>
+			</table>
+			<input type="submit" class="btn btn-primary btn-block" value="Checkout with PayPal">
+			<form>
+				<a href="index.html" class="btn btn-success btn-block">Continue Shopping</a>
+			</form>
+			</form>
+			</div>
+	
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="scripts/checkout.js"></script>
+		
+	</body>
+</html>
